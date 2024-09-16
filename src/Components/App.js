@@ -8,7 +8,7 @@ import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable,
         classHatTable, classHpTable, classDevilsLuckCircleFillTable, 
         classClothingTable, classWeaponTable, 
         bruteWeaponTable, buccaneerWeaponTable } from '../Tables/tables.js';
-import PirateBorgCharacterSheetv3p1 from '../Assets/PirateBorgCharacterSheetv3p1.jpg';
+import PirateBorgCharacterSheetv3letter from '../Assets/PirateBorgCharacterSheetv3letter.jpg';
 import RollStat from '../Utilities/stat-roller.js';
 import WeaponDisplay from './weapons.js';
 import GearDisplay from './gear.js';
@@ -115,7 +115,7 @@ function App() {
         </MobileView>
       </div>
       <div className="container" id="print-content">
-        <img src={PirateBorgCharacterSheetv3p1} className="character-sheet" alt=""></img>
+        <img src={PirateBorgCharacterSheetv3letter} className="character-sheet" alt=""></img>
 
         <div className={textStyleClasses.largeText + " character-name-text " + positionStyleClasses.CharacterName}>
           <span>{firstNames + " “" + nickname + "” " + lastName}</span>

@@ -4,7 +4,7 @@
     text-align: left;
     background-color: white;
     width: 100%;
-    aspect-ratio: 26 / 36;
+    aspect-ratio: 17 / 22;
 }
 
 /* Background character sheet image*/
@@ -15,7 +15,7 @@
 /* Character Name text */
 .character-name-text {
     position:absolute;
-    top: 8.4%;
+    top: 8.0%;
     left: 6%;
     max-width: 27.5%;
     font-weight:bold;
@@ -32,7 +32,7 @@
 /* Class name text */
 .class-name {
     position: absolute;
-    top: 12.75%;
+    top: 12.45%;
     left: 9%;
     width: 20%;
 }
@@ -40,9 +40,9 @@
 /* Class and Abilities text */
 .class-features {
     position: absolute;
-    top: 16%;
-    left: 6.5%;
-    width: 19%;
+    top: 14.95%;
+    left: 6.2%;
+    width: 19.2%;
     line-height: 1.05;
     white-space: pre-line;
     background-color: white;
@@ -52,14 +52,14 @@
 .hp {
     position: absolute;
     top: 5%;
-    left: 48%;
+    left: 48.5%;
     font-weight: bold;
 }
 
 /* weapon text */
 .weapon {
     position: absolute;
-    top: 8.5%;
+    top: 8.0%;
     left: 57.5%;
     max-width: 33%;
     background-color: white;
@@ -68,7 +68,7 @@
 /* strength stat text */
 .strength {
     position: absolute;
-    top: 17.75%;
+    top: 17.25%;
     left: 52%;
     font-weight: bold;
 }
@@ -76,7 +76,7 @@
 /* agility stat text */
 .agility {
     position: absolute;
-    top: 21.75%;
+    top: 21.25%;
     left: 52.25%;
     font-weight: bold;
 }
@@ -84,7 +84,7 @@
 /* presence stat text */
 .presence {
     position: absolute;
-    top: 25.25%;
+    top: 24.75%;
     left: 52%;
     font-weight: bold;
 }
@@ -92,7 +92,7 @@
 /* toughness stat text */
 .toughness {
     position: absolute;
-    top: 29.5%;
+    top: 29.0%;
     left: 51%;
     font-weight: bold;
 }
@@ -100,7 +100,7 @@
 /* spirit stat text */
 .spirit {
     position: absolute;
-    top: 33%;
+    top: 32.25%;
     left: 48.5%;
     font-weight: bold;
 }
@@ -108,33 +108,34 @@
 /* equipment text */
 .clothes-text {
     position: absolute;
-    top: 14%;
-    left: 60%;
-    max-width: 23.5%;
+    top: 13.3%;
+    left: 59%;
+    max-width: 24%;
     line-height: 1.05;
     background-color: white;
+    padding: 3px;
 }
 
 /* equipment text */
 .equipment {
     position: absolute;
-    top: 25%;
-    left: 63%;
+    top: 24%;
+    left: 62.5%;
     max-width: 30%;
 }
 
-/* devils luck text */
-.devils-luck {
+/* relic text */
+.relic {
     position: absolute;
-    top: 40.25%;
-    left: 44%;
-    font-weight: bold;
+    top: 31%;
+    left: 7%;
+    max-width: 24%;
 }
 
 /* devils luck circles */
 .devils-luck-circle-one {
     position: absolute;
-    top: 43.9%;
+    top: 42.9%;
     left: 36.2%;
     font-weight: bold;
     font-family: unset;
@@ -143,7 +144,7 @@
 /* devils luck circles */
 .devils-luck-circle-two {
     position: absolute;
-    top: 43.8%;
+    top: 42.8%;
     left: 38.8%;
     font-weight: bold;
     font-family: unset;
@@ -152,16 +153,24 @@
 /* devils luck circles */
 .devils-luck-circle-three {
     position: absolute;
-    top: 43.8%;
+    top: 42.8%;
     left: 41.5%;
     font-weight: bold;
     font-family: unset;
 }
 
+/* terrible trait 1 text */
+.character-background {
+    position: absolute;
+    top: 53%;
+    left: 5.5%;
+    max-width: 22%;
+}
+
 /* distinctive flaw text */
 .distinctive-flaw {
     position: absolute;
-    top: 62%;
+    top: 61%;
     left: 6%;
     max-width: 20%;
 }
@@ -169,15 +178,15 @@
 /* Broken body text */
 .physical-ailment {
     position: absolute;
-    top: 69.5%;
-    left: 6%;
+    top: 68.5%;
+    left: 5.5%;
     max-width: 22%;
 }
 
 /* bad habit text */
 .idiosyncracies {
     position: absolute;
-    top: 77.25%;
+    top: 75.5%;
     left: 5%;
     max-width: 22%;
 }
@@ -185,33 +194,17 @@
 /* troubling tale text */
 .unfortunate-incidents {
     position: absolute;
-    top: 84.5%;
+    top: 83%;
     left: 5%;
     max-width: 23%;
-}
-
-/* terrible trait 1 text */
-.character-background {
-    position: absolute;
-    top: 54%;
-    left: 5.5%;
-    max-width: 22%;
 }
 
 /* thing of importance text */
 .thing-of-importance {
     position: absolute;
-    top: 93.25%;
+    top: 91.75%;
     left: 7%;
     max-width: 20%;
-}
-
-/* relic text */
-.relic {
-    position: absolute;
-    top: 31.5%;
-    left: 7%;
-    max-width: 24%;
 }
 
 /* Centered text */
