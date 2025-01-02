@@ -4093,8 +4093,7 @@ export const buccaneerAbilityTable =
     "Buccan Cook: Months of island life have taught you the art of cooking meats over the buccan fire. You start with d8 rations of exquisite smoked meat. Eating it immediately recovers d4 HP, and you can make d4 more rations from any edible animal you kill.",
     "Survivalist: Your body has developed into a finely tuned machine for existing in the wild. Gain +1 Toughness. You cannot become infected, sick, or poisoned, and your maximum HP increases by d4."]
 
-export const buccaneerWeaponTable =
-    ["You start with a musket, and reloading takes 1 round instead of 2."]
+export const buccaneerWeaponDescription = "You start with a musket, and reloading takes 1 round instead of 2.";
 
 export const swashbucklerAbilityTable = 
     ["Ostentatious Fencer: Your melee Attack/Defense is DR10 when wielding a rapier or cutlass. When dueling one-on-one, you deal +1 damage.",

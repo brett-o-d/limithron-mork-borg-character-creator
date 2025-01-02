@@ -5,15 +5,15 @@ import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable,
         clothingTable, hatTable, firstNamesTable, nicknameTable,
         lastNameTable, statLookupTable, classTable, classAbilityTables, classStatsModifierTable, 
         classHatTable, classHpTable, classDevilsLuckCircleFillTable,
-        classClothingTable, bruteWeaponTable, buccaneerWeaponTable } from '../Tables/tables.js';
+        classClothingTable, bruteWeaponTable, buccaneerWeaponDescription } from '../Tables/tables.js';
 import { CabinFeverClassTable, cabinFeverClassAbilityTables, CabinFeverClassStatsModifierTable,
          CabinFeverClassDevilsLuckCircleFillTable, CabinFeverClassHpTable,
-         CabinFeverClassClothingTable, CabinFeverClassHatTable } from '../Tables/cabin-fever-tables.ts';
+         CabinFeverClassClothingTable, CabinFeverClassHatTable, messWeaponDescription } from '../Tables/cabin-fever-tables.ts';
 import PirateBorgCharacterSheetColorLetter from '../Assets/Pirate_Borg_Character_Sheet_Color_Letter_v2_cropped.jpg';
 import PirateBorgCharacterSheetv3p1 from '../Assets/PirateBorgCharacterSheetv3p1.jpg';
 import PirateBorgCharacterSheetBWLetter from '../Assets/Pirate_Borg_Character_Sheet_BW_Letter_cropped.jpg';
 import RollStat from '../Utilities/stat-roller.js';
-import { WeaponDisplay, DetermineWeapon } from './weapons.tsx';
+import { DetermineWeapon } from './weapons.tsx';
 import EquipmentDisplay from './equipment.js';
 import './css/character-sheet.css';
 import './css/print.css';
@@ -142,7 +142,10 @@ function CharacterSheet(props) {
         <div className={textStyleClasses.largeText + " class-name " + positionStyleClasses.ClassName}>{className}</div>
         <div className={textStyleClasses.mediumText + " class-features " + positionStyleClasses.ClassFeatures}>
         {classValue === 2 /* Buccaneer */
-                ? <div>{buccaneerWeaponTable[Math.floor((Math.random() * buccaneerWeaponTable.length))]}<br/><br/></div>
+                ? <div>{buccaneerWeaponDescription}<br/><br/></div>
+                : null}
+        {className === 'The Mess' /* The Mess */
+                ? <div>{messWeaponDescription}<br/><br/></div>
                 : null}
         <div>{classAbility}</div>
         {classValue === 0 /* Brute */
@@ -171,7 +174,9 @@ function CharacterSheet(props) {
         </div>
         {DevilsLuckCircles()}
 
-        {WeaponDisplay(weapon, classValue)}
+        <div className={textStyleClasses.mediumText + " weapon " + positionStyleClasses.Weapon}>
+          { weapon }
+        </div>
 
 
         <div className={textStyleClasses.mediumText + " character-background"}>
